@@ -13,17 +13,17 @@ const Nav = styled.nav`
   padding-left: 30rem;
 `;
 
-
-const Title = styled.div`
-  padding: 1rem;
-  border-radius: 0 0 20px;
-  background-color: #cad5d5;
-  font-size: 2rem;
-  font-weight: bold;
-  position: fixed;
-  top: 0;
-  z-index: 1;
-`;
+//
+//const Title = styled.div`
+//  padding: 1rem;
+//  border-radius: 0 0 20px;
+//  background-color: #cad5d5;
+//  font-size: 2rem;
+//  font-weight: bold;
+//  position: fixed;
+//  top: 0;
+//  z-index: 1;
+//`;
 
 const Ul = styled.ul`
   list-style-type: none;
@@ -56,7 +56,7 @@ export class NavigationBar extends Component {
   render() {
     return (
       <div>
-        <Title>South-east Asia 3-months itinerary</Title>
+        {/*<Title>South-east Asia 3-months itinerary</Title>*/}
         <Nav>
           <Ul>
             <Li>
@@ -70,6 +70,9 @@ export class NavigationBar extends Component {
             </Li>
             <Li>
               <A activeClassName='active' to="/about">About</A>
+            </Li>
+            <Li>
+              <A activeClassName='active' to="/qa">Q & A</A>
             </Li>
           </Ul>
         </Nav>

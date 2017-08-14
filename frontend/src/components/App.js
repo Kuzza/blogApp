@@ -8,6 +8,7 @@ import { NavigationBar } from './navigation-bar.js'
 import { About } from './about'
 import { Home } from './home'
 import { Map } from './map'
+import { QA } from './question-answer'
 
 
 injectGlobal`
@@ -45,6 +46,7 @@ class App extends Component {
             <Route exact path='/' component={Home} />
             <Route path='/about' component={About} />
             <Route path='/map' component={Map} />
+            <Route path='/qa' component={QA} />
           </Body>
         </Main>
       </BrowserRouter>

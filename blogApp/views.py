@@ -1,9 +1,12 @@
 from rest_framework.views import APIView
+from rest_framework.generics import ListCreateAPIView
 from rest_framework.response import Response
 from django.views.generic import View
 from django.http import HttpResponse
 from django.conf import settings
 import os
+
+from serializers import PostSerializer
 
 
 
@@ -24,7 +27,7 @@ class ReactAppView(View):
             )
 
 
-class PostView(APIView):
+class PostListCreateAPIView(ListCreateAPIView):
+    serializer_class = PostSerializer
 
-    def get(self, request, **kwargs):
-        return Response([1, 2, 3])
+
