@@ -7,6 +7,7 @@ from django.conf import settings
 import os
 
 from serializers import PostSerializer
+from models import Post
 
 
 
@@ -29,5 +30,9 @@ class ReactAppView(View):
 
 class PostListCreateAPIView(ListCreateAPIView):
     serializer_class = PostSerializer
+    queryset = Post.objects.all()
+
+    def get(self, request, **kwargs):
+        return super(PostListCreateAPIView, self).get(request, **kwargs)
 
 

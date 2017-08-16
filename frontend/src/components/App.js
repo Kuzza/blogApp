@@ -8,7 +8,7 @@ import { NavigationBar } from './navigation-bar.js'
 import { About } from './about'
 import { Home } from './home'
 import { Map } from './map'
-import { QA } from './question-answer'
+import QA from './question-answer'
 
 
 injectGlobal`
