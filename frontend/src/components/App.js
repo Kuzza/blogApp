@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import _ from 'lodash'
-import axios from 'axios'
 import styled, {injectGlobal} from 'styled-components'
 import { BrowserRouter, Route } from 'react-router-dom'
 

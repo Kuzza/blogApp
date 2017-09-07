@@ -1,6 +1,5 @@
 import axios from 'axios'
-
-export const GET_INITIAL_DATA = 'GET_INITIAL_DATA';
+import {GET_INITIAL_DATA} from './constants'
 
 
 export function fetchData () {
@@ -15,8 +14,7 @@ export function fetchData () {
   }
 }
 
-export function sendQuestion (e, data) {
-  debugger;
-  e.preventDefault();
-  console.log(data);
+export function sendEmail (values) {
+  axios.post('/send-email', values);
 }
+

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import _ from 'lodash'
 import styled from 'styled-components'
-import { Route, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 
 const Nav = styled.nav`

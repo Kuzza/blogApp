@@ -21,5 +21,7 @@ urlpatterns = [
     url(r'^admin/?', admin.site.urls),
     url(r'^posts/?', views.PostListCreateAPIView.as_view()),
 
+    url(r'^send-email/?', views.EmailSender.as_view()),
+
     url(r'^', views.ReactAppView.as_view()),
 ]

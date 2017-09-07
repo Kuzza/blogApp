@@ -3,7 +3,8 @@ import _ from 'lodash'
 import styled from 'styled-components'
 
 
-const Box = styled.div`    position: absolute;
+const Box = styled.div`
+  position: absolute;
   top: 3rem;
   right: 10%;
   width: 23rem;

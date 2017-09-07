@@ -79,6 +79,13 @@ WSGI_APPLICATION = 'blogApp.wsgi.application'
 
 CORS_ORIGIN_ALLOW_ALL = True
 
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = 1025
+DEFAULT_FROM_EMAIL = 'testing@example.com'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = False
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases

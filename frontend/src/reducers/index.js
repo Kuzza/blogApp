@@ -1,9 +1,13 @@
 import { combineReducers } from 'redux'
-import posts from './posts'
+import postsReducer from './posts'
+
+
+import { reducer as formReducer } from 'redux-form'
 
 
 const blogApp = combineReducers({
-  posts
+  posts: postsReducer,
+  form: formReducer
 })
 
 export default blogApp;

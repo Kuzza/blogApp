@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
-import _ from 'lodash'
 import styled from 'styled-components'
 
 import img from '../images/main.jpg'
-import { TravelBox } from './travel-box'
+//import { TravelBox } from './travel-box'
 
 
 const Image = styled.img`
