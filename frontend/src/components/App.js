@@ -5,7 +5,7 @@ import { BrowserRouter, Route } from 'react-router-dom'
 import { NavigationBar } from './navigation-bar.js'
 import { About } from './about'
 import { Home } from './home'
-import { Map } from './map'
+import { MapPage } from './map'
 import QA from './question-answer'
 
 
@@ -43,7 +43,7 @@ class App extends Component {
           <Body>
             <Route exact path='/' component={Home} />
             <Route path='/about' component={About} />
-            <Route path='/map' component={Map} />
+            <Route path='/map' component={MapPage} />
             <Route path='/qa' component={QA} />
           </Body>
         </Main>
