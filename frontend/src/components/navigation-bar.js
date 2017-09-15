@@ -10,19 +10,9 @@ const Nav = styled.nav`
   width: 100%;
   position: fixed;
   padding-left: 30rem;
+  z-index: 2;
 `;
 
-//
-//const Title = styled.div`
-//  padding: 1rem;
-//  border-radius: 0 0 20px;
-//  background-color: #cad5d5;
-//  font-size: 2rem;
-//  font-weight: bold;
-//  position: fixed;
-//  top: 0;
-//  z-index: 1;
-//`;
 
 const Ul = styled.ul`
   list-style-type: none;

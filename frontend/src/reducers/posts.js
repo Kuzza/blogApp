@@ -1,9 +1,9 @@
-import { GET_INITIAL_DATA } from '../actions/constants'
+import { GET_QA_DATA } from '../actions/constants'
 
 
 const postsReducer = (state = [], action) => {
   switch (action.type) {
-    case GET_INITIAL_DATA: {
+    case GET_QA_DATA: {
       return action.payload;
     }
     default:

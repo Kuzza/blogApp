@@ -26,12 +26,6 @@ const AnswerBox = styled.div`
 
 class QA extends Component {
 
-  propTypes: {
-    posts: React.PropTypes.array.isRequired,
-    fetchData: React.PropTypes.func.isRequired
-  }
-
-
   componentDidMount () {
     this.props.fetchData();
   }
@@ -47,8 +41,12 @@ class QA extends Component {
       </Box>
     )
   }
-};
+}
 
+QA.propTypes = {
+  posts: React.PropTypes.array.isRequired,
+  fetchData: React.PropTypes.func.isRequired
+}
 
 
 const mapStateToProps = state => {
