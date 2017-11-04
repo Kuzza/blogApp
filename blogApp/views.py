@@ -13,23 +13,26 @@ import os
 from serializers import PostSerializer, PlaceSerializer
 from models import Post, Place
 
-
 class ReactAppView(View):
+    """
+    Serves the compiled frontend entry point (only works if you have run `yarn
+    run build`).
+    """
 
     def get(self, request):
         try:
-
-            with open(os.path.join(settings.REACT_APP, 'build', 'index.html')) as file:
-                return HttpResponse(file.read())
-
-        except :
+            with open(os.path.join(settings.REACT_APP_DIR, 'build', 'index.html')) as f:
+                return HttpResponse(f.read())
+        except FileNotFoundError:
+            logging.exception('Production build of app not found')
             return HttpResponse(
                 """
-                index.html not found ! build your React app !!
+                This URL is only used when you have built the production
+                version of the app. Visit http://localhost:3000/ instead, or
+                run `yarn run build` to test the production version.
                 """,
                 status=501,
             )
-
 
 class PostListCreateAPIView(ListCreateAPIView):
     serializer_class = PostSerializer
