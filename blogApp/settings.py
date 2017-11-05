@@ -75,10 +75,11 @@ TEMPLATES = [
 REACT_APP_DIR = os.path.join(BASE_DIR, 'frontend')
 
 STATICFILES_DIRS = [
-    os.path.join(REACT_APP_DIR, 'build', 'static'),
+    os.path.join(REACT_APP_DIR, 'build', 'static')
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'frontend/build/static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'frontend/build/')
+
 WEBPACK_LOADER = {
     'DEFAULT': {
         'BUNDLE_DIR_NAME': 'bundles/',
