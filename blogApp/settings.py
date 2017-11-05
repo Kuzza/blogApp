@@ -25,10 +25,7 @@ SECRET_KEY = '2@8ou+k76x4r)546$7g@i7d#n90322dkl-e9w8(0eie)^-!vve'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    'django-env.pxpc9mm26g.us-west-2.elasticbeanstalk.com',
-    'localhost',
-]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -81,6 +78,7 @@ STATICFILES_DIRS = [
     os.path.join(REACT_APP_DIR, 'build', 'static'),
 ]
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'frontend/build/static')
 WEBPACK_LOADER = {
     'DEFAULT': {
         'BUNDLE_DIR_NAME': 'bundles/',
