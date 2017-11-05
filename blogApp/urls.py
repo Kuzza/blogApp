@@ -20,11 +20,5 @@ from blogApp import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    url(r'^admin/?', admin.site.urls),
-    url(r'^posts/?', views.PostListCreateAPIView.as_view()),
-    url(r'^places/?', views.PlaceListAPIView.as_view()),
-
-    url(r'^send-email/?', views.EmailSender.as_view()),
-
-    url(r'^', views.ReactAppView.as_view()),
+    url(r'^admin/?', admin.site.urls)
 ] 
