@@ -6,10 +6,6 @@
 frontend/node_modules/
 frontent/build/
 
-# Elastic Beanstalk Files
-.elasticbeanstalk/*
-!.elasticbeanstalk/*.cfg.yml
-!.elasticbeanstalk/*.global.yml
 
 frontend/.DS_Store
 frontend/.env.local
