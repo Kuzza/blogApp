@@ -17,7 +17,7 @@ awscli==1.11.22
 awsebcli==3.8.4
 backports.ssl-match-hostname==3.5.0.1
 beautifulsoup4==4.5.1
-bleach==1.5.0
+bleach==3.3.0
 blessed==1.9.5
 botocore==1.4.79
 cement==2.8.2
