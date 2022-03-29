@@ -50,7 +50,7 @@ lxml==3.3.3
 mercurial==4.4rc0
 oauthlib==2.0.1
 oneconf==0.3.7.14.4.1
-paramiko==1.17.2
+paramiko==2.10.1
 pathspec==0.3.4
 pbr==0.7.0
 pexpect==3.1
